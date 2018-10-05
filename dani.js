@@ -224,6 +224,7 @@ var definedEasings = {
 };
 
 function Animation(params) {
+  params = typeof params === 'object' ? params : {};
   this.duration = typeof params.duration === 'number' ? params.duration : 1000;
   if (typeof params.ease === 'string') {
     if (typeof definedEasings[params.ease] !== 'function') {
