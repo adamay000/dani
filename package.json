@@ -4,5 +4,11 @@
   "main": "dani.js",
   "license": "MIT",
   "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamay000/dani.git"
+  },
+  "homepage": "https://github.com/adamay000/dani",
+  "author": "adamay000",
   "dependencies": {}
 }
