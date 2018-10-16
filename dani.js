@@ -359,11 +359,6 @@ Animation.prototype.off = function on(eventName, callback) {
   return this;
 };
 Animation.prototype.__emit = function __emit(eventName, value) {
-  if (eventName !== 'progress') {
-    var div = document.createElement('div');
-    div.textContent = eventName + ': ' + value;
-    document.body.appendChild(div);
-  }
   this.__local.events[eventName].forEach(function (event) {
     event(value);
   });
